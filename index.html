@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naxape Widget Test Page</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 60px 40px;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    pre {
+      background: #0f172a;
+      color: #38bdf8;
+      padding: 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome to My Website</h1>
+    <p>This is a test dummy page demonstrating the Naxape chat widget loaded via <code>window.naxapeWidgetConfig</code>.</p>
+    <pre>&lt;script&gt;
+  window.naxapeWidgetConfig = {
+    chatbotId: "d0f02354-97b2-449a-85f2-d8fb38e24cb2",
+    chatbotName: "Syed Muhammad Hur Kazmi ",
+    secureKey: "65e3361760474f65a798f37c846b113b" 
+  };
+&lt;/script&gt;
+&lt;script src="./widget.js" defer&gt;&lt;/script&gt;</pre>
+    <p>Look at the bottom right corner of this page to interact with the widget.</p>
+  </div>
+
+  <!-- Naxape Chat Widget Configuration -->
+  <script>
+    window.naxapeWidgetConfig = {
+      chatbotId: "d0f02354-97b2-449a-85f2-d8fb38e24cb2",
+      chatbotName: "Syed Muhammad Hur Kazmi ",
+      secureKey: "65e3361760474f65a798f37c846b113b" 
+    };
+  </script>
+  <script type="module" src="/src/widget-entry.tsx"></script>
+</body>
+</html>
+
